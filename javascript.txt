@@ -1,0 +1,473 @@
+                                                                            Javascript
+																			
+	1) Data Types                                                                                                            OUTPUT
+		
+		NUMBER                                                                                                              
+
+				typeof 12 																									 nuumber
+		
+		BOOLEAN
+		
+				typeof true
+		
+		STRING
+		
+				typeof "enjoy leanrning"
+				
+		UNDEFINED --> The data type which is unknown 
+		
+				typeof //undefined text
+				
+				
+	
+	2) Variables 
+	
+		let myVariables;
+		
+		myVariables = "practice";
+		
+		typeof myVariables;       																							String    
+		
+		
+		let myNumber;
+		
+		myNumber = 18;
+		
+		myNumber + 6;																										  24 
+		
+		myNumber +6 -2;																										  4
+		
+		myNumber = 6*3																										  18
+		
+		let variable = abc 
+		number = 123
+		
+		let myCombo = variable + number;																					 abc123
+		
+		let num = 18;
+		num === 18;			 																								  true
+		num !== 18;																											  false
+		
+		=== checks both value and data type whereas == checks only value
+		
+		
+		
+	3)  
+	    alert("Hello World")                                                                                                Hello world
+		
+		
+		
+	4)  String Methods
+	
+		myVariables = Mathematics;
+		
+		console.log(myVariables.length)																							11
+	
+		console.log(myVariables.charAt(0))                                                                                       M
+		
+		console.log(myVariables.indexOf(ati))                                                                                    6
+
+		console.log(myVariables.lastIndexOf("t")                                                                                 7
+		
+		console.log(myVariables.slice(5,8)                ---> last index not considered                                          mat
+	   
+		console.log(myVariables.toUpperCase())                                                                              MATHEMATICS
+		
+		console.log(myVariables.toLowerCase())                                                                              mathematics
+		
+		console.log(myVariables.includes("mat"))                                                                                true
+		
+		console.log(myVariables.split('m'))																					[ 'Mathe', 'atics' ] 
+		
+		
+		
+		
+
+    5)  Number Methods   
+	
+	    const myNumber = "123"
+		
+		const mynumber = 123
+		
+		const myFloat = 12.99423
+		
+	    console.log(myNumber === mynumber)																						false
+		
+		console.log(Number(mynumber) === mynumber)       ---> Number changes the String to Integer                              True
+		
+		console(Number.isInteger(426.06))				 ---> Checks the wheather given number is integer or not                false
+		
+		console.log(Number.parseFloat(myNumber)          ---> (string, int ) changes to float           						123
+		
+		console.log(Number.parseInt(myNumber)            ---> it converts to integers                                           123
+		
+		console.log(Number.parseFloat
+		(myNumber).tofixed(2))                           ---> after using float it fixes how many number should be              12
+
+		console.log(myFloat.toString())                  ---> it converts to String                                             12.99423(string) 
+		
+		Number.isNan
+		.isNan 1.30min
+		
+		
+	6)  Math Properties
+	
+		console.log(Math.PI)                             ---> PI value                                                         3.142
+		console.log(Math.trunc(Math.PI))                 ---> It truncates Math.PI                                               3
+		console.log(Math.ceil(4.1))                      ---> It round off to the max number (here it is 5)                      5
+		console.log(Math.round(4.5))                     ---> 4.4 and below means 1, 4.5 and above means 5                       5
+		console.log(Math.floor(4.8))                     ---> It goes to the min number which is 4                               4
+		console.log(Math.pow(4,3))                       ---> It is 4 power 3                                                   64
+		console.log(Math.min(1,2,3,4,5))                 ---> It calculates the minimum number                                   1
+		console.log(Math.max(1,2,3,4,5))                 ---> It calculates the maximum number                                   5
+        console.log(Math.random())                       ---> It generates the random number between 0 and 1 
+		console.log(Math.floor(Math.random() * 10)	     ---> It multiplies with 10 and becomes 3.5 and then converts to 3   +0.35 -> 3.5 -> 3
+		
+		
+	7)  If Statement
+	 
+			
+		1)	
+			let customerisbanned = true
+			let customer = "Javascript full course"
+			let reply
+			let finance = true
+		
+			if (customerisbanned){
+				reply = `sorry`
+		
+			else if (customer && finance) {
+				reply = `enjoy ${customer} and finance`
+			}
+		
+			else if (customer){
+				reply = `Enjoy ${customer}`
+			}
+		
+			else { 
+				reply = `Sorry not available`
+			}                                                                                                                      sorry       
+    
+	8)	Switch Statement
+        
+		1)	
+			let testscore = 40
+			let grade
+			let collegestudent = true
+		
+			if ( testscore >= 90){
+				grade = 'A' 
+			}
+		
+			else if (testscore >= 70){
+				grade = 'B'
+			}
+		
+			else if (testscore >= 50){
+				grade = 'C'
+			}
+		
+			else {
+				if (collegestudent){
+					grade = 'Reappear'
+				}
+				else {
+					grade = 'fail'
+				}
+			}                                                                                                                  Reappear
+		
+			console.log(grade) 
+			
+		2)  Rock scissor and paper game
+		
+			let user = "rock"
+			let computer = "paper"
+			
+			
+			switch(user) {
+				case "rock": {
+					if (computer === "paper"){
+						console.log("user is out")
+					}
+					else if (computer === "scissor"){
+						console.log("user is win")
+					}
+					else {
+						console.log("game is tie")
+					}
+					break;
+				}
+				
+				case "paper": {
+					if (computer === "scissor"){
+						console.log("user is out")
+					}
+					else if (computer === "rock"){
+						console.log("user is win")
+					}
+					else {
+						console.log("game is tie")
+					}
+					break;
+				}
+				
+				case "scissor": {
+					if (computer == "rock"){
+						console.log("user is out")
+					}
+					else if (computer == "paper"){
+						console.log("user is win")
+					}
+					else {
+						console.log("game is tie")
+					}
+					break;
+				}
+				
+				default: {
+					console.log("game not played")
+				}
+			}																													user is out
+			
+			
+	9)  Ternary Operators 
+	
+		1) 
+		
+		2hrs 41 min 
+		
+	10) User Input 
+	
+		1) 		
+		
+			let myBoolean = confirm ("Hi Subscribers");
+			console.log(myBoolean)                                   ---> this will be printed like pop up                  Hi Subscribers
+			 
+			let my = window.prompt("hello welcome");          
+			console.log(my)                                          ---> this is getting actual user input                 hello welcome
+				
+				
+	11)	Loops
+
+		1)  While loop
+		
+			let i = 0;
+			while (i <=50){
+				console.log(i);
+			}                                                       ---> 0 gets printed infinfinty times (bcz no i++)         infinity
+			
+			let i = 0;
+			while (i <=50){
+				console.log(i);
+				i++;
+			}                                                       ---> here i++ occurs so 1 to 50.                           1 to 50
+			
+			
+		2) do while loop 
+		
+			let i = 50;
+			do {                                                   ---> if you want to execute the code atleast
+				console.log(i);                                          once you can use do - while
+				i = i + 60
+			}                                                      ---> Here first console.log(i) gets executed            
+			while(i<50)                                                 so only 50 will be printed                               50
+			
+			
+			
+	00) Arrays
+	
+			const myArr = [];
+			myArr[0] = "Dhuddu";
+			myArr[1] = "Money";
+			myArr[2] = "Paisa";
+
+			console.log(myArr);                                                                                                     [ 'Dhuddu', 'Money', 'Paisa' ]
+
+			console.log(myArr.length);																											 3
+
+			console.log(myArr.length - 1);                                                                                                       2
+
+
+			myArr.push("click")
+			console.log(myArr);                                                                                             [ 'Dhuddu', 'Money', 'Paisa', 'click' ]
+
+			myArr.push("mouse")                         ---> it adds an array
+			console.log(myArr);                                                                                      [ 'Dhuddu', 'Money', 'Paisa', 'click', 'mouse' ]
+
+			myArr.pop()                                 ---> it removes an array
+			console.log(myArr);                                                                                              [ 'Dhuddu', 'Money', 'Paisa', 'click' ] 
+
+			myArr.unshift("Mouse")                      ----> it adds an array
+			console.log(myArr);                                                                                      [ 'Mouse', 'Dhuddu', 'Money', 'Paisa', 'click' ]
+
+			myArr.shift()                               ---> it removes an array
+			console.log(myArr);                                                                                            [ 'Dhuddu', 'Money', 'Paisa', 'click' ]
+			
+			* splice method
+			
+			->  Remove one element
+
+				let arr = ["A", "B", "C", "D"];
+
+				arr.splice(1, 1);
+
+				console.log(arr);                                                                                                          ["A", "C", "D"]
+				
+				
+			->	Remove multiple elements
+
+				let arr = ["A", "B", "C", "D"];
+
+				arr.splice(1, 2);
+
+				console.log(arr);                                                                                                            ["A", "D"]
+				
+			-> splice() can also ADD elements
+
+				let arr = ["A", "B", "D"];
+
+				arr.splice(2, 0, "C");
+
+				console.log(arr);                                                                                                         ["A", "B", "C", "D"]
+			
+			->  splice() can REPLACE elements. You can remove and add at the same time.
+
+				let arr = ["A", "B", "C", "D"];
+
+				arr.splice(1, 1, "X");
+
+				console.log(arr);                                                                                                         ["A", "X", "C", "D"]
+			
+			*   Slice
+			
+			->  Basic slicing
+			
+				let arr = ["A", "B", "C", "D", "E"];
+
+				let result = arr.slice(1, 4);
+
+				console.log(result);																										["B", "C", "D"]
+			
+			->  slicing does not delete
+			
+				let arr = ["A", "B", "C", "D"];
+
+				let result = arr.slice(1, 3);
+
+				console.log(result);                                                                                                         ["B", "C"]
+
+				console.log(arr);																							              ["A", "B", "C", "D"]
+
+																										
+				
+	100)
+	
+		Extra:
+		
+	$	null colaescing                                            ---> if there is null or undefined property it 
+																		replaces with the value which we give.                    
+																		
+		const a = { duration: 50}  
+		
+		a.speed ??= 25; 
+		console.log(a.speed);
+		
+		a.duration ??= 10;
+		console.log(a.duration)
+		
+	$	|| works differently.
+		
+		It checks whether the left side is falsy.
+		Falsy values include:
+		
+		false
+		0
+		""
+		null
+		undefined
+		NaN
+		
+		?. -> Safely try to access something.
+		
+	./	Optional chaining
+		
+		person.address?.city
+		
+		means: "Try to get city from address. But if address is null or undefined, don't throw an error. Just give me undefined."
+		
+	$	CONCEPT OF AUTOMATIC SEMICOLON INSERTION.
+	
+		function add(a, b) {
+			return
+			a + b;
+		}
+		
+		You might look at this and think:
+		
+		"It's the same thing. return means return a + b."
+		
+		But it is not the same thing.
+
+		JavaScript sees the line break immediately after return.
+
+		Because of Automatic Semicolon Insertion, JavaScript effectively changes it to:
+
+		function add(a, b) {
+			return;
+			a + b;
+		}
+		
+		
+	$	Short-circuit evaluation means JavaScript stops evaluating an expression as soon as it already knows what the final result must be.
+
+		This mainly happens with:
+
+		&& — logical AND
+		|| — logical OR
+		?? — nullish coalescing
+
+		The key idea is:
+
+		JavaScript evaluates from left to right and may stop before evaluating everything.
+		
+		When you see:
+
+		A && B
+
+		think:
+
+		"If A is falsy, give me A. Otherwise, give me B."
+
+		When you see:
+
+		A || B
+
+		think:
+
+		"If A is truthy, give me A. Otherwise, give me B."
+
+		When you see:
+
+		A ?? B
+
+		think:
+
+		"If A is not null or undefined, give me A. Otherwise, give me B."
+
+		That is the core of short-circuit evaluation.
+		
+		continue statement:
+		
+		let arav = "";
+		for (let i = 0; i < 10;i++){
+			if (i==5){
+				continue;
+			}
+			arav += i;
+			}
+		console.log(arav);
+		
+		try     → "Try to do this"
+		throw   → "I found a problem, raise an error"
+		catch   → "If an error happens, handle it here"
+		finally → "Do this anyway, whether there is an error or not"
